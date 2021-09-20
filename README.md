@@ -17,36 +17,50 @@
 
 To clone and run this application, you'll need Python3+ installed on your machine.
 
+
+Clone this repository
 ```bash
-# Clone this repository
 $ git clone https://github.com/DBDoco/Linux-Bash-Clone.git
-
-# Go into the repository
-$ cd Linux-Bash-Clone
-
-# Run the script
-$ sudo python bash.py
-
-# For information on the available commands type "help" 
 ```
+
+Go into the repository
+```bash
+$ cd Linux-Bash-Clone
+```
+
+Run the script
+```bash
+$ sudo python bash.py
+```
+
+For information on the available commands type "help" 
+
 
 ## How To Use SSL
 
-```bash
 In remoteshd.conf type server and client port (same port is used for both.) 
 
-# Run the key script (generates RSA key pair)
+Run the key script (generates RSA key pair)
+```bash
 $ sudo python generate_key.py
+```
 
-# Run the script
+Run the script
+```bash
 $ sudo python bash.py
+```
 
-# Create users that can login on the server (hashed and saved in users-passwords.conf)
+Create users that can login on the server (hashed and saved in users-passwords.conf)
+```bash
 $ newuser
+```
 
-# In one terminal run server
+In one terminal run server
+```bash
 $ remoteshd
+```
 
-# In second terminal run client that connects on the server
+In second terminal run client that connects on the server
+```bash
 $ remotesh
 ```
